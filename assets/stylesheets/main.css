@@ -1,8 +1,21 @@
 @import url("https://use.typekit.net/lpc5jkg.css");
+@import url("https://fonts.googleapis.com/css?family=Parisienne");
+::selection {
+  background: #ebae34;
+}
+::-moz-selection {
+  background: #ebae34;
+}
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: "alda";
   font-weight: 400;
-  background-color: #2d2e30;
+  background-image: url("../../assets/images/bg.jpg");
+  background-position: right center;
+  background-size: cover;
+  font-size: 1.4rem;
 }
 * {
   margin: 0;
@@ -11,6 +24,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  flex-direction: column;
+  height: 85%;
   color: #d9d5ce;
+}
+#centerText h1 {
+  font-family: "Parisienne";
+  color: #ebae34;
+  font-size: 6.5rem;
+  font-weight: 100;
+  margin-bottom: -22px;
+}
+p.mediumtext {
+  font-size: 2rem;
+  color: #d9d5ce;
+}
+p.smalltext {
+  font-size: 1.4rem;
+  color: #9a9499;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
 }
