@@ -1,0 +1,16 @@
+@import url("https://use.typekit.net/lpc5jkg.css");
+body {
+  font-family: "alda";
+  font-weight: 400;
+  background-color: #2d2e30;
+}
+* {
+  margin: 0;
+}
+#centerText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #d9d5ce;
+}
