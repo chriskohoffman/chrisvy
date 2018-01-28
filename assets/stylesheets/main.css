@@ -50,3 +50,7 @@ p.smalltext {
   align-items: center;
   height: 15%;
 }
+#cvlogo {
+  width: 300px;
+  opacity: 1;
+}
