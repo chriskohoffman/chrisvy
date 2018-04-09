@@ -62,6 +62,28 @@ p.smalltext {
 .left-links,
 .right-links {
   width: 30%;
+  position: relative;
+  height: 250px;
+}
+.left-links > div,
+.right-links > div {
+  display: flex;
+  height: 50%;
+}
+.left-links > div > div,
+.right-links > div > div {
+  background-color: rgba(255,255,255,0.2);
+  flex-grow: 1;
+  height: 100%;
+}
+.left-links > div {
+  right: 0;
+}
+.left-links > div > .mainlinks {
+  margin-right: 1px;
+}
+.left-links > div > .mainlinks:first-child {
+  margin-right: none;
 }
 .top-links {
   border-bottom: 1px solid #fafafa;

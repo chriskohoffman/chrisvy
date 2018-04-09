@@ -23,14 +23,101 @@
 }
 .fadeindown {
   animation-name: fadeIn, slideDown;
-  animation-duration: 2000ms, 2000ms;
+  animation-duration: 1500ms, 1500ms;
   transition-timing-function: ease-in;
+}
+.delay-1000 {
+  animation-delay: 1000ms;
+  animation-fill-mode: both;
+}
+.delay-1100 {
+  animation-delay: 1100ms;
+  animation-fill-mode: both;
+}
+.delay-1000 {
+  animation-delay: 1000ms;
+  animation-fill-mode: both;
+}
+.delay-1300 {
+  animation-delay: 1300ms;
+  animation-fill-mode: both;
+}
+.delay-1400 {
+  animation-delay: 1400ms;
+  animation-fill-mode: both;
+}
+.delay-1500 {
+  animation-delay: 1500ms;
+  animation-fill-mode: both;
+}
+.delay-1600 {
+  animation-delay: 1600ms;
+  animation-fill-mode: both;
+}
+.delay-1700 {
+  animation-delay: 1700ms;
+  animation-fill-mode: both;
+}
+.delay-1800 {
+  animation-delay: 1800ms;
+  animation-fill-mode: both;
+}
+.delay-1900 {
+  animation-delay: 1900ms;
+  animation-fill-mode: both;
+}
+.delay-3000 {
+  animation-delay: 3000ms;
+  animation-fill-mode: both;
+}
+.delay-2000 {
+  animation-delay: 2000ms;
+  animation-fill-mode: both;
+}
+.delay-2100 {
+  animation-delay: 2100ms;
+  animation-fill-mode: both;
+}
+.delay-2200 {
+  animation-delay: 2200ms;
+  animation-fill-mode: both;
+}
+.delay-2300 {
+  animation-delay: 2300ms;
+  animation-fill-mode: both;
+}
+.delay-2400 {
+  animation-delay: 2400ms;
+  animation-fill-mode: both;
+}
+.delay-2500 {
+  animation-delay: 2500ms;
+  animation-fill-mode: both;
+}
+.delay-2600 {
+  animation-delay: 2600ms;
+  animation-fill-mode: both;
+}
+.delay-2700 {
+  animation-delay: 2700ms;
+  animation-fill-mode: both;
+}
+.delay-2800 {
+  animation-delay: 2800ms;
+  animation-fill-mode: both;
+}
+.delay-2900 {
+  animation-delay: 2900ms;
+  animation-fill-mode: both;
+}
+.delay-3000 {
+  animation-delay: 3000ms;
+  animation-fill-mode: both;
 }
 .fadewidth {
   animation-name: widthExpand, fadeIn;
   animation-duration: 2000ms, 2000ms;
   transition-timing-function: ease-in;
-  animation-direction: alternate;
 }
 @-moz-keyframes fadeIn {
   0% {
@@ -178,7 +265,7 @@
 }
 @-moz-keyframes slideDown {
   0% {
-    transform: translate3d(0, -2%, 0);
+    transform: translate3d(0, -20%, 0);
   }
   100% {
     transform: none;
@@ -186,7 +273,7 @@
 }
 @-webkit-keyframes slideDown {
   0% {
-    transform: translate3d(0, -2%, 0);
+    transform: translate3d(0, -20%, 0);
   }
   100% {
     transform: none;
@@ -194,7 +281,7 @@
 }
 @-o-keyframes slideDown {
   0% {
-    transform: translate3d(0, -2%, 0);
+    transform: translate3d(0, -20%, 0);
   }
   100% {
     transform: none;
@@ -202,7 +289,7 @@
 }
 @keyframes slideDown {
   0% {
-    transform: translate3d(0, -2%, 0);
+    transform: translate3d(0, -20%, 0);
   }
   100% {
     transform: none;
@@ -211,48 +298,40 @@
 @-moz-keyframes widthExpand {
   from {
     width: 0%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
   to {
     width: 100%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
 }
 @-webkit-keyframes widthExpand {
   from {
     width: 0%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
   to {
     width: 100%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
 }
 @-o-keyframes widthExpand {
   from {
     width: 0%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
   to {
     width: 100%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
 }
 @keyframes widthExpand {
   from {
     width: 0%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
   to {
     width: 100%;
-    top: 0;
-    right: 0;
+    position: absolute;
   }
 }

@@ -94,6 +94,27 @@ p.smalltext
 .left-links,
 .right-links
 	width 30%
+	position relative
+	height 250px
+	
+	& > div
+		display flex
+		height 50%
+		
+		& > div /* This is for the links */
+			background-color: rgba(255,255,255,0.2)
+			flex-grow 1
+			height 100%
+			
+		
+.left-links > div
+	right 0
+	
+	& > .mainlinks
+		margin-right 1px
+		
+		&:first-child
+			margin-right none
 
 .top-links
 	border-bottom 1px solid #fafafa
