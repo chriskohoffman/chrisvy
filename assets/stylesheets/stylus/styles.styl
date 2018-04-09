@@ -33,6 +33,7 @@ body = "alda"
 
 html
 	font-size 62.5%
+	overflow-x hidden
 
 
 body
@@ -56,8 +57,6 @@ body
 	flex-direction column
 	height 85%
 	color nardo
-	animation-name fadeIn
-	animation-duration 2s
 	
 	& h1
 		font-family heading
@@ -84,3 +83,35 @@ p.smalltext
 #cvlogo
 	width 300px
 	opacity 1
+
+#cvlogo-main
+	width 125px
+	opacity 1
+	
+
+
+// New Index
+.left-links,
+.right-links
+	width 30%
+
+.top-links
+	border-bottom 1px solid #fafafa
+	
+#centernav
+	display flex
+	align-items center
+	justify-content center
+	flex-direction row
+	height 85%
+	color nardo
+	
+	& h1
+		font-family heading
+		color gold
+		font-size 6.5rem
+		font-weight 100
+		margin-bottom -22px
+		
+	& img
+		margin 0 50px

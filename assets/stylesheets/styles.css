@@ -8,6 +8,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "alda";
@@ -27,8 +28,6 @@ body {
   flex-direction: column;
   height: 85%;
   color: #d9d5ce;
-  animation-name: fadeIn;
-  animation-duration: 2s;
 }
 #centerText h1 {
   font-family: "Parisienne";
@@ -55,4 +54,33 @@ p.smalltext {
 #cvlogo {
   width: 300px;
   opacity: 1;
+}
+#cvlogo-main {
+  width: 125px;
+  opacity: 1;
+}
+.left-links,
+.right-links {
+  width: 30%;
+}
+.top-links {
+  border-bottom: 1px solid #fafafa;
+}
+#centernav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 85%;
+  color: #d9d5ce;
+}
+#centernav h1 {
+  font-family: "Parisienne";
+  color: #ebae34;
+  font-size: 6.5rem;
+  font-weight: 100;
+  margin-bottom: -22px;
+}
+#centernav img {
+  margin: 0 50px;
 }
