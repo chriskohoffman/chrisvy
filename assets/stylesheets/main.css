@@ -27,6 +27,8 @@ body {
   flex-direction: column;
   height: 85%;
   color: #d9d5ce;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 #centerText h1 {
   font-family: "Parisienne";
