@@ -64,6 +64,34 @@
 	}
 }
 
+@keyframes growUp {
+	from {
+		height: 0%;
+		position: absolute;
+		bottom: 0;
+	}
+
+	to {
+		height: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+@keyframes growDown {
+	from {
+		height: 0%;
+		position: absolute;
+		top: 0;
+	}
+
+	to {
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+}
+
 .m-scene {
 	/** Basic styles for an animated element */
 	.scene_element {
@@ -97,11 +125,29 @@
 	animation-duration 2000ms
 	animation-name fadeIn
 	transition-timing-function ease-in-out
-	
+
+// Fade in and slide down
 .fadeindown
 	animation-name fadeIn, slideDown
 	animation-duration 1500ms, 1500ms  
 	transition-timing-function ease-in
+	
+// Expand outwards, fading in
+.fadewidth
+	animation-name widthExpand, fadeIn
+	animation-duration 2000ms, 2000ms
+	transition-timing-function ease-in	
+	
+.expandup
+	animation-name growUp, fadeIn
+	animation-duration 2000ms, 2000ms
+	transition-timing-function ease-in
+	
+.expanddown
+	animation-name growDown, fadeIn
+	animation-duration 2000ms, 2000ms
+	transition-timing-function ease-in
+	
 
 .delay-1000
 	animation-delay 1000ms
@@ -192,7 +238,4 @@
 	animation-fill-mode both
 
  
-.fadewidth
-	animation-name widthExpand, fadeIn
-	animation-duration 2000ms, 2000ms
-	transition-timing-function ease-in
+

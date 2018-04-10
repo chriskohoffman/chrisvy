@@ -26,6 +26,21 @@
   animation-duration: 1500ms, 1500ms;
   transition-timing-function: ease-in;
 }
+.fadewidth {
+  animation-name: widthExpand, fadeIn;
+  animation-duration: 2000ms, 2000ms;
+  transition-timing-function: ease-in;
+}
+.expandup {
+  animation-name: growUp, fadeIn;
+  animation-duration: 2000ms, 2000ms;
+  transition-timing-function: ease-in;
+}
+.expanddown {
+  animation-name: growDown, fadeIn;
+  animation-duration: 2000ms, 2000ms;
+  transition-timing-function: ease-in;
+}
 .delay-1000 {
   animation-delay: 1000ms;
   animation-fill-mode: both;
@@ -113,11 +128,6 @@
 .delay-3000 {
   animation-delay: 3000ms;
   animation-fill-mode: both;
-}
-.fadewidth {
-  animation-name: widthExpand, fadeIn;
-  animation-duration: 2000ms, 2000ms;
-  transition-timing-function: ease-in;
 }
 @-moz-keyframes fadeIn {
   0% {
@@ -333,5 +343,101 @@
   to {
     width: 100%;
     position: absolute;
+  }
+}
+@-moz-keyframes growUp {
+  from {
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@-webkit-keyframes growUp {
+  from {
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@-o-keyframes growUp {
+  from {
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@keyframes growUp {
+  from {
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@-moz-keyframes growDown {
+  from {
+    height: 0%;
+    position: absolute;
+    top: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+@-webkit-keyframes growDown {
+  from {
+    height: 0%;
+    position: absolute;
+    top: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+@-o-keyframes growDown {
+  from {
+    height: 0%;
+    position: absolute;
+    top: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+@keyframes growDown {
+  from {
+    height: 0%;
+    position: absolute;
+    top: 0;
+  }
+  to {
+    height: 100%;
+    position: absolute;
+    top: 0;
   }
 }
