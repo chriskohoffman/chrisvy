@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/dqd3zrm.css");
 @import url("https://fonts.googleapis.com/css?family=Parisienne");
+.step1,
+.step2,
+.step3 {
+  background-color: transparent !important;
+}
 ::selection {
   background: #ebae34;
 }
@@ -19,8 +24,18 @@ body {
   background-size: cover;
   font-size: 1.4rem;
 }
-* {
-  margin: 0;
+a {
+  color: #ff0;
+  text-decoration: none;
+}
+a:hover {
+  color: #76571a;
+}
+h4 {
+  font-family: "aktiv-grotesk";
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin: 0 0 10px;
 }
 #centerText {
   display: flex;
@@ -60,6 +75,10 @@ p.smalltext {
   width: 125px;
   opacity: 1;
 }
+#cvlogo-sm {
+  width: 80px;
+  margin-bottom: 30px;
+}
 .left-links,
 .right-links {
   width: 30%;
@@ -74,7 +93,7 @@ p.smalltext {
 }
 .left-links > div > div,
 .right-links > div > div {
-  flex-grow: 1;
+  width: 50%;
   position: relative;
   height: 100%;
   box-sizing: border-box;
@@ -83,23 +102,21 @@ p.smalltext {
 .right-links > div > div > a {
   height: 100%;
   position: relative;
-  width: 99%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #d9d5ce;
+  border-right: 1px solid rgba(217,213,206,0.7);
   box-sizing: border-box;
   font-size: 3rem;
   color: #ebae34;
   text-decoration: none;
   font-weight: 100;
   line-height: 3rem;
+  transition: 300ms ease-in-out;
 }
 .left-links > div {
   right: 0;
-}
-.left-links > div > .mainlink-container {
-  margin-right: 1px;
 }
 .left-links > div > .mainlink-container:last-child {
   margin-right: none;
@@ -107,8 +124,26 @@ p.smalltext {
 .left-links > div > .mainlink-container:last-child > a {
   border: none;
 }
+.right-links > div > .mainlink-container:last-child {
+  margin-right: none;
+}
+.right-links > div > .mainlink-container:last-child > a {
+  border: none;
+}
 .top-links {
-  border-bottom: 1px solid #d9d5ce;
+  border-bottom: 1px solid rgba(217,213,206,0.7);
+}
+.top-links div:first-child > a:hover {
+  box-shadow: 1px 1px 0px #ebae34;
+}
+.top-links div:last-child > a:hover {
+  box-shadow: -1px 1px 0px #ebae34;
+}
+.bottom-links div:first-child > a:hover {
+  box-shadow: 1px -1px 0px #ebae34;
+}
+.bottom-links div:last-child > a:hover {
+  box-shadow: -1px -1px 0px #ebae34;
 }
 #centernav {
   display: flex;
@@ -127,4 +162,24 @@ p.smalltext {
 }
 #centernav img {
   margin: 0 50px;
+}
+#contentarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85%;
+  color: #d9d5ce;
+}
+#contentarea h1 {
+  font-family: "Parisienne";
+  color: #ebae34;
+  font-size: 6.5rem;
+  font-weight: 100;
+  margin-bottom: -22px;
+}
+.bodytext {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "aktiv-grotesk";
 }

@@ -18,8 +18,11 @@ gold = #ebae34
 heading = "Parisienne"
 ampersand = "bickham-script-pro-3"
 body = "alda"
+body-sans = "aktiv-grotesk"
 
 
+.step1, .step2, .step3
+	background-color transparent !important
 
 
 // ------- G L O B A L
@@ -28,8 +31,6 @@ body = "alda"
 	
 ::-moz-selection
 	background gold
-
-
 
 html
 	font-size 62.5%
@@ -45,9 +46,19 @@ body
 	background-size cover
 	font-size 1.4rem
 
-
-*
-	margin 0
+	
+a
+	color yellow
+	text-decoration none
+	
+	&:hover
+		color gold * 0.5
+		
+h4
+	font-family body-sans
+	font-size 2.1rem
+	font-weight 300
+	margin 0 0 10px
 
 
 // Coming Soon
@@ -89,6 +100,10 @@ p.smalltext
 	width 125px
 	opacity 1
 	
+#cvlogo-sm
+	width 80px
+	margin-bottom 30px
+	
 
 
 // New Index
@@ -104,9 +119,9 @@ p.smalltext
 		height 50%
 		position relative
 		
-		// mainlinks-container
+		// mainlink-container
 		& > div
-			flex-grow 1
+			width 50%
 			position relative
 			height 100%
 			box-sizing border-box
@@ -115,11 +130,11 @@ p.smalltext
 		& > div > a /* This is for the links */
 			height 100%
 			position relative
-			width 99%
+			width 100%
 			display flex
 			align-items center
 			justify-content center
-			border-right 1px solid nardo
+			border-right 1px solid rgba(nardo, 0.7)
 			box-sizing border-box
 			
 			font-size 3rem
@@ -127,6 +142,8 @@ p.smalltext
 			text-decoration none
 			font-weight 100
 			line-height 3rem
+			transition 300ms ease-in-out
+
 				
 			
 		
@@ -134,7 +151,6 @@ p.smalltext
 	right 0
 	
 	& > .mainlink-container
-		margin-right 1px
 		
 		&:last-child
 			margin-right none
@@ -142,8 +158,27 @@ p.smalltext
 			& > a
 				border none
 
+.right-links > div > .mainlink-container:last-child
+	margin-right none
+	
+	& > a 
+		border none
+
 .top-links
-	border-bottom 1px solid nardo
+	border-bottom 1px solid rgba(nardo, 0.7)
+	
+	& div:first-child > a:hover
+		box-shadow 1px 1px 0px gold
+		
+	& div:last-child > a:hover
+		box-shadow -1px 1px 0px gold
+		
+.bottom-links
+	& div:first-child > a:hover
+		box-shadow 1px -1px 0px gold
+		
+	& div:last-child > a:hover
+		box-shadow -1px -1px 0px gold
 	
 #centernav
 	display flex
@@ -162,3 +197,23 @@ p.smalltext
 		
 	& img
 		margin 0 50px
+		
+#contentarea
+	display flex
+	align-items center
+	justify-content center
+	flex-direction column
+	height 85%
+	color nardo
+	
+	& h1
+		font-family heading
+		color gold
+		font-size 6.5rem
+		font-weight 100
+		margin-bottom -22px
+		
+.bodytext
+	font-size 16px
+	font-weight 300
+	font-family body-sans
