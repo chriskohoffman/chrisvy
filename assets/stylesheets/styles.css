@@ -193,7 +193,7 @@ p.smalltext {
   position: absolute;
 }
 .navbar a {
-  font-family: "aktiv-grotesk";
+  font-family: "aktiv-grotesk" !important;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
