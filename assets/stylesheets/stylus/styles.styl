@@ -41,10 +41,30 @@ html
 body
 	font-family body
 	font-weight 400
-	background url('../../assets/images/bg.jpg') right center no-repeat fixed
-	background-size cover
+	background-size cover !important
 	font-size 1.4rem
 	margin 80px 0 0 0
+	
+	&#home
+		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+		
+	&#rsvp
+		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+	
+	&#details
+		background url('../../assets/backgrounds/belvedere.png') right center no-repeat fixed
+		
+	&#gifts
+		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+	
+	&#about
+		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+		
+	&#photos
+		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+		
+	&#entourage
+		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
 
 	
 a
@@ -54,12 +74,43 @@ a
 	&:hover
 		color gold * 0.5
 		
+h2 
+	font-size 3rem
+	font-weight 100
+	margin-top -8px
+	color gold
+		
 h4
 	font-family body-sans
 	font-size 2.1rem
 	font-weight 300
 	margin 0 0 10px
 	text-align center
+	
+h5
+	font-family body-sans
+	font-weight 700
+	color nardo
+	text-transform lowercase
+	font-variant small-caps
+	margin-bottom 0
+	letter-spacing 0.2rem
+	font-size 2rem
+	
+.bodytext
+	font-size 16px
+	font-weight 300
+	font-family body-sans
+	
+.detailtext
+	font-size 2.1rem
+	line-height 2.4rem
+	font-weight 200
+	font-family body
+	color gold
+	
+.nomargin
+	margin 0
 
 
 // Coming Soon
@@ -198,9 +249,8 @@ p.smalltext
 	& img
 		margin 0 50px
 		
-#contentarea
+.contentarea
 	display flex
-	align-items center
 	justify-content center
 	flex-direction column
 	height 100%
@@ -213,10 +263,6 @@ p.smalltext
 		font-weight 100
 		margin-bottom -22px
 		
-.bodytext
-	font-size 16px
-	font-weight 300
-	font-family body-sans
 	
 .navbar
 	top 3%
@@ -224,7 +270,6 @@ p.smalltext
 	display flex
 	align-items center
 	justify-content center
-	flex-direction column
 	position absolute
 
 	
@@ -234,3 +279,38 @@ p.smalltext
 		text-transform uppercase
 		letter-spacing 0.5rem
 		color gold
+		
+.left
+	align-items flex-start
+	margin-right 20px
+	
+.center
+	align-items center
+	
+.right
+	align-items flex-end
+	margin-left 30px
+	
+.container
+	margin 0 30px
+	width 100%
+	display flex
+	
+.column
+	flex-direction column
+	
+.row
+	flex-direction row !important
+	align-items flex-start !important
+	justify-content flex-start !important
+	
+
+// Wedding Detail Specific CSS
+.details
+	width 30%
+	padding 35px
+	background-color rgba(black,0.7)
+	
+	& .detailtext
+		margin-bottom 20px
+	
