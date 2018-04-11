@@ -1,0 +1,97 @@
+.navicon 
+  background transparent
+  position relative
+  display flex
+  flex-direction column
+  z-index 99
+  transition linear 0.5s all
+  width 50px
+  height 30px
+  
+
+  &:before,
+  &:after 
+    background #fff
+    backface-visibility hidden
+    content ""
+    height 2px
+    left 0
+    transition 0.8s ease
+    width 35px
+  
+  &:before 
+    box-shadow #fff 0 12px 0 0
+    position absolute
+    top 0
+  
+  &:after 
+    position absolute
+    top 24px
+  
+  &--active   
+    margin-top 20px
+    transition linear 0.5s all
+    &:before 
+      box-shadow transparent 0 0 0 0
+      top 15px
+      transform rotate(225deg)
+    
+    &:after   
+      top 15px
+      transform rotate(315deg)
+    
+  
+
+
+.toggle 
+  display block
+  margin 20px auto
+  width 30%
+  background-color rgba(255, 255, 255, .8)
+  padding 15px
+  display block
+  opacity 0
+  transition ease-in 0.5s all
+  transform translateY(-200%)
+  min-width 320px
+  position absolute
+  top calc(3% + 60px)
+  
+  &--active 
+    display block
+    opacity 1
+    transition ease-in 0.5s all
+    transform translateY(0)
+    
+
+    
+  &__menu 
+    margin-bottom 25px
+    li 
+      width 25%
+      display block
+      margin 10px auto
+      a 
+        text-decoration none
+        color #000
+        display block
+        text-align center
+        font-size 17px
+        text-transform uppercase
+        border-bottom 2px solid transparent
+        transition linear 0.5s all
+        font-weight 500
+        padding 5px 0
+        span 
+          text-transform lowercase
+        
+        &:hover 
+          color #db5523
+          border-bottom 2px solid #db5523
+          transition linear 0.5s all
+          transform scale(1.15)
+          font-weight 700
+        
+      
+    
+  

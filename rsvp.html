@@ -1,9 +1,10 @@
 <html>
 
 <head>
-	<title>She said maybe!</title>
+	<title>chrisvy | RSVP</title>
 	<link rel="stylesheet" href="assets/stylesheets/animations.css">
 	<link rel="stylesheet" href="assets/stylesheets/styles.css">
+	<link rel="stylesheet" href="assets/stylesheets/nav.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
@@ -11,7 +12,17 @@
 
 <body id="rsvp">
 
-
+	<div class="navbar">
+		<a href="#nowhere" class="navicon"></a>
+		<div class="toggle">
+			<ul class="toggle__menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#"><span>..and more</span></a></li>
+			</ul>
+		</div>
+	</div>
 	<div id="contentarea" class="">
 		<a href="index.html"><img src="assets/images/cv-logo-yellow-nodate.svg" id="cvlogo-sm" class="fadeindown"></a>
 		<h4>Please RSVP individually by invite.</h4>
@@ -19,8 +30,12 @@
 		<script type="text/javascript" src="http://app.rsvpify.com/embed/500101686"></script><script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script><script type="text/javascript">iFrameResize({autoResize: true,checkOrigin: false,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
 
 	</div>
-
-	<script type="text/javascript" src="iframe.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">		
+	</script>
+	<script type="text/javascript" src="navigation.js"></script>
 </body>
 
 </html>

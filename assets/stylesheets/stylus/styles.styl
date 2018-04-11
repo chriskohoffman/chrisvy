@@ -41,10 +41,10 @@ html
 body
 	font-family body
 	font-weight 400
-	background-image url('../../assets/images/bg.jpg')
-	background-position right center
+	background url('../../assets/images/bg.jpg') right center no-repeat fixed
 	background-size cover
 	font-size 1.4rem
+	margin 80px 0 0 0
 
 	
 a
@@ -59,6 +59,7 @@ h4
 	font-size 2.1rem
 	font-weight 300
 	margin 0 0 10px
+	text-align center
 
 
 // Coming Soon
@@ -142,7 +143,6 @@ p.smalltext
 			text-decoration none
 			font-weight 100
 			line-height 3rem
-			transition 300ms ease-in-out
 
 				
 			
@@ -185,7 +185,7 @@ p.smalltext
 	align-items center
 	justify-content center
 	flex-direction row
-	height 85%
+	height 100%
 	color nardo
 	
 	& h1
@@ -203,7 +203,7 @@ p.smalltext
 	align-items center
 	justify-content center
 	flex-direction column
-	height 85%
+	height 100%
 	color nardo
 	
 	& h1
@@ -217,3 +217,20 @@ p.smalltext
 	font-size 16px
 	font-weight 300
 	font-family body-sans
+	
+.navbar
+	top 3%
+	width 100%
+	display flex
+	align-items center
+	justify-content center
+	flex-direction column
+	position absolute
+
+	
+	& a
+		font-family body-sans
+		font-size 15px
+		text-transform uppercase
+		letter-spacing 0.5rem
+		color gold
