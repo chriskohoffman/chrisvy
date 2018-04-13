@@ -3,6 +3,7 @@ charcoal = #2D2E30
 nardo = #d9d5ce
 grigio = #9a9499
 gold = #ebae34
+  
 
 .navicon 
   background transparent
@@ -103,5 +104,102 @@ gold = #ebae34
           color gold * 0.9
         
       
+// LIGHT THEME
+  
+.light .navicon 
+  background transparent
+  position relative
+  display flex
+  flex-direction column
+  z-index 99
+  transition linear 0.5s all
+  width 50px
+  height 30px
+  
+
+  &:before,
+  &:after 
+    background charcoal
+    backface-visibility hidden
+    content ""
+    height 2px
+    left 0
+    transition 0.8s ease
+    width 35px
+  
+  &:before 
+    box-shadow charcoal 0 12px 0 0
+    position absolute
+    top 0
+  
+  &:after 
+    position absolute
+    top 24px
+  
+  &--active   
+    margin-top 20px
+    transition linear 0.5s all
+    &:before 
+      box-shadow transparent 0 0 0 0
+      top 15px
+      transform rotate(225deg)
+    
+    &:after   
+      top 15px
+      transform rotate(315deg)
     
   
+
+
+.light .toggle 
+  display block
+  margin 20px auto
+  width 30%
+  background-color rgba(255, 255, 255, .95)
+  padding 15px
+  display block
+  opacity 0
+  transition ease-in 0.5s all
+  transform translateY(-200%)
+  min-width 320px
+  position absolute
+  top calc(3% + 60px)
+  
+  &--active 
+    display block
+    opacity 1
+    transition ease-in 0.5s all
+    transform translateY(0)
+    
+
+    
+  &__menu 
+    padding 0
+    
+    li 
+      width 100%
+      display flex
+      align-items center
+      justify-content center
+      padding 30px 0
+      border-bottom 1px solid rgba(charcoal,0.1)
+      
+      &:last-child
+        border none
+        padding-bottom 0
+        
+      &:first-child
+        padding-top 0
+      
+      a 
+        text-decoration none
+        color gold
+        width 100%
+        height 100%
+        display flex
+        align-items center
+        justify-content center
+        
+        
+        &:hover 
+          color gold * 0.9

@@ -27,7 +27,7 @@ body#home {
   background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
 }
 body#rsvp {
-  background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
+  background: url("../../assets/backgrounds/rsvp.jpg") right center no-repeat fixed;
 }
 body#details {
   background: url("../../assets/backgrounds/belvedere.png") right center no-repeat fixed;
@@ -35,8 +35,8 @@ body#details {
 body#gifts {
   background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
 }
-body#about {
-  background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
+body#proposal {
+  background: url("../../assets/backgrounds/cinqueterre.jpg") right center no-repeat fixed;
 }
 body#photos {
   background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
@@ -50,6 +50,12 @@ a {
 }
 a:hover {
   color: #76571a;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 100;
+  font-family: "aktiv-grotesk";
+  color: #ebae34;
 }
 h2 {
   font-size: 3rem;
@@ -89,6 +95,11 @@ h5 {
 .nomargin {
   margin: 0;
 }
+.light h4 {
+  color: #2d2e30;
+  font-weight: 400;
+  font-family: "alda";
+}
 #centerText {
   display: flex;
   align-items: center;
@@ -98,7 +109,7 @@ h5 {
   color: #d9d5ce;
 }
 #centerText h1 {
-  font-family: "Parisienne";
+  font-family: "alda";
   color: #ebae34;
   font-size: 6.5rem;
   font-weight: 100;
@@ -205,7 +216,7 @@ p.smalltext {
   color: #d9d5ce;
 }
 #centernav h1 {
-  font-family: "Parisienne";
+  font-family: "alda";
   color: #ebae34;
   font-size: 6.5rem;
   font-weight: 100;
@@ -221,13 +232,6 @@ p.smalltext {
   height: 100%;
   color: #d9d5ce;
 }
-.contentarea h1 {
-  font-family: "Parisienne";
-  color: #ebae34;
-  font-size: 6.5rem;
-  font-weight: 100;
-  margin-bottom: -22px;
-}
 .navbar {
   top: 3%;
   width: 100%;
@@ -235,6 +239,7 @@ p.smalltext {
   align-items: center;
   justify-content: center;
   position: absolute;
+  z-index: 999;
 }
 .navbar a {
   font-family: "aktiv-grotesk" !important;
@@ -274,4 +279,43 @@ p.smalltext {
 }
 .details .detailtext {
   margin-bottom: 20px;
+}
+.cinqueterre-overlay {
+  background: url("../../assets/backgrounds/cinqueterre2.png") right center no-repeat fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+div.proposal {
+  justify-content: flex-start;
+  z-index: 10;
+  margin-top: -84px;
+  position: relative;
+}
+div.proposal .description {
+  margin-right: 50px;
+  width: 40%;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.8);
+}
+div.proposal p.bodytext {
+  color: #2d2e30;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  font-weight: 500;
+  font-family: "alda";
+}
+div.proposal h1 {
+  margin: 0 0 0 0;
+}
+#proposal .navbar {
+  justify-content: flex-start;
+  padding: 0 50px;
 }

@@ -6,7 +6,7 @@
 
 
 
-// ------- D E C L A R A T I O N S 
+// ------- D E C L A R A T I O N S  ------- //
 
 // Colors
 charcoal = #2D2E30
@@ -15,7 +15,7 @@ grigio = #9a9499
 gold = #ebae34
 
 // Fonts
-heading = "Parisienne"
+heading = "alda"
 ampersand = "bickham-script-pro-3"
 body = "alda"
 body-sans = "aktiv-grotesk"
@@ -25,12 +25,12 @@ body-sans = "aktiv-grotesk"
 	background-color transparent !important
 
 
-// ------- G L O B A L
+// ------- G L O B A L ------- //
 ::selection
 	background gold
 	
 ::-moz-selection
-	background gold
+	background gold 
 
 html
 	font-size 62.5%
@@ -49,7 +49,7 @@ body
 		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
 		
 	&#rsvp
-		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+		background url('../../assets/backgrounds/rsvp.jpg') right center no-repeat fixed
 	
 	&#details
 		background url('../../assets/backgrounds/belvedere.png') right center no-repeat fixed
@@ -57,8 +57,8 @@ body
 	&#gifts
 		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
 	
-	&#about
-		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+	&#proposal
+		background url('../../assets/backgrounds/cinqueterre.jpg') right center no-repeat fixed
 		
 	&#photos
 		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
@@ -73,6 +73,12 @@ a
 	
 	&:hover
 		color gold * 0.5
+		
+h1
+	font-size 6rem
+	font-weight 100
+	font-family body-sans
+	color gold
 		
 h2 
 	font-size 3rem
@@ -102,6 +108,8 @@ h5
 	font-weight 300
 	font-family body-sans
 	
+
+	
 .detailtext
 	font-size 2.1rem
 	line-height 2.4rem
@@ -111,6 +119,15 @@ h5
 	
 .nomargin
 	margin 0
+	
+
+	
+// ------- L I G H T T H E M E ------- //
+.light
+	& h4
+		color charcoal
+		font-weight 400
+		font-family body
 
 
 // Coming Soon
@@ -255,13 +272,7 @@ p.smalltext
 	flex-direction column
 	height 100%
 	color nardo
-	
-	& h1
-		font-family heading
-		color gold
-		font-size 6.5rem
-		font-weight 100
-		margin-bottom -22px
+
 		
 	
 .navbar
@@ -271,6 +282,7 @@ p.smalltext
 	align-items center
 	justify-content center
 	position absolute
+	z-index 999
 
 	
 	& a
@@ -303,7 +315,8 @@ p.smalltext
 	flex-direction row !important
 	align-items flex-start !important
 	justify-content flex-start !important
-	
+
+
 
 // Wedding Detail Specific CSS
 .details
@@ -314,3 +327,44 @@ p.smalltext
 	& .detailtext
 		margin-bottom 20px
 	
+// Proposal Specific CSS
+.cinqueterre-overlay
+	background url('../../assets/backgrounds/cinqueterre2.png') right center no-repeat fixed
+	background-size cover
+	position fixed
+	top 0
+	left 0
+	pointer-events none
+	z-index 1
+	
+	height 100%
+	width 100%
+	margin 0
+	padding 0
+	
+div.proposal
+	justify-content flex-start
+	z-index 10
+	margin-top -84px
+	position relative
+	
+	& .description
+		margin-right 50px
+		width 40%
+		padding 30px
+		background-color rgba(white, 0.8)
+		
+	& p.bodytext
+		color charcoal
+		margin-bottom 15px
+		word-wrap break-word
+		font-weight 500
+		font-family body
+		
+	& h1
+		margin 0 0 0 0
+		
+#proposal
+	& .navbar
+		justify-content flex-start
+		padding 0 50px

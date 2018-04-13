@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 320px) and (max-device-width: 480) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
   #centernav {
     flex-direction: column;
   }
@@ -12,5 +12,20 @@
   }
   .left-links {
     top: 0;
+  }
+  .cinqueterre-overlay {
+    display: none;
+  }
+  div.proposal {
+    justify-content: none;
+    margin-top: 0;
+  }
+  div.proposal .description {
+    margin-right: 0;
+    width: 80%;
+    background-color: rgba(255,255,255,0.8);
+  }
+  #proposal {
+    background: url("../../assets/backgrounds/cinqueterre-mobile.jpg") right center no-repeat fixed;
   }
 }
