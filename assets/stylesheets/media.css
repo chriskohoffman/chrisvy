@@ -1,4 +1,36 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+  body {
+    background-attachment: initial;
+  }
+  body#gifts:before {
+    display: none;
+  }
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-size: cover !important;
+  }
+  body#home:before {
+    background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
+  }
+  body#details:before {
+    background: url("../../assets/backgrounds/belvedere3.jpg") left top no-repeat fixed;
+  }
+  body#proposal:before {
+    background: url("../../assets/backgrounds/cinqueterre2.jpg") right center no-repeat fixed;
+  }
+  body#photos:before {
+    background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
+  }
+  body#entourage:before {
+    background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
+  }
   #centernav {
     flex-direction: column;
   }
@@ -25,7 +57,53 @@
     width: 80%;
     background-color: rgba(255,255,255,0.8);
   }
-  #proposal {
-    background: url("../../assets/backgrounds/cinqueterre-mobile.jpg") right center no-repeat fixed;
+  body#proposal .cinqueterre-overlay {
+    display: none !important;
+  }
+  body#proposal .navbar {
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0;
+    left: 30px;
+    padding-left: 20px;
+  }
+  .videobg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #gifts .contentarea {
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+  }
+  #gifts .contentarea p.bodytext {
+    width: 80%;
+  }
+  #gifts div.footnote {
+    display: none;
+  }
+  #details .contentarea {
+    margin: 0;
+    width: 90%;
+  }
+  #details .contentarea .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #details .contentarea .container .col2 {
+    width: 80%;
+    margin-left: 0;
   }
 }

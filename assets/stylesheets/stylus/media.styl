@@ -1,5 +1,42 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 720px)
 
+	body
+		background-attachment: initial;
+		
+		&#gifts:before
+			display none
+		
+		&:before
+			content ""
+			display block
+			position fixed
+			left 0
+			top 0
+			width 100%
+			height 100%
+			z-index -10
+			background-size cover !important
+		
+		&#home:before
+			background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+			
+		&#details:before
+			background url('../../assets/backgrounds/belvedere3.jpg') left top no-repeat fixed
+		
+		// &#gifts
+			// background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+		
+		&#proposal:before
+			background url('../../assets/backgrounds/cinqueterre2.jpg') right center no-repeat fixed
+			
+		&#photos:before
+			background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+			
+		&#entourage:before
+			background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+			
+
+
 	#centernav
 			flex-direction column
 			
@@ -14,10 +51,12 @@
 	.left-links
 		top 0
 	
+
+
 	// Proposal
 		
 	.cinqueterre-overlay
-		display none;
+		display none
 		
 	div.proposal
 		justify-content none
@@ -30,5 +69,66 @@
 			width 80%
 			background-color rgba(white, 0.8)
 						
-	#proposal
-		background url('../../assets/backgrounds/cinqueterre-mobile.jpg') right center no-repeat fixed
+	body#proposal
+		
+		& .cinqueterre-overlay
+			display none !important
+		
+		& .navbar
+			justify-content flex-start
+			width 80%                                                 
+			margin 0
+			left 30px
+			padding-left 20px
+			
+			
+		
+
+	.videobg
+		position fixed
+		top 0
+		left 0
+		overflow hidden
+		z-index -100
+		width 100%
+		height 100%
+	
+	& .video
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		object-fit cover
+	
+	#gifts
+		
+		& .contentarea
+			width 100%
+			background-color rgba(white,0.8)
+			
+			& p.bodytext
+				width 80%
+		
+		& div.footnote
+			display none
+	
+	// Details Page
+	
+	#details
+		
+
+		& .contentarea
+			margin 0
+			width 90%
+			
+			& .container
+				display flex
+				flex-direction column
+					
+				& .col2
+					width 80%
+					margin-left 0
+				
+
+			
