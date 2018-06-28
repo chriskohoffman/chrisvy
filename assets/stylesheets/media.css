@@ -17,7 +17,7 @@
     background-size: cover !important;
   }
   body#home:before {
-    background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
+    background: url("../../assets/backgrounds/bg-mobile.jpg") right center no-repeat fixed;
   }
   body#details:before {
     background: url("../../assets/backgrounds/belvedere3.jpg") left top no-repeat fixed;
@@ -33,6 +33,7 @@
   }
   #centernav {
     flex-direction: column;
+    height: 100%;
   }
   #centernav > img {
     margin: 15px 0 -5px;
