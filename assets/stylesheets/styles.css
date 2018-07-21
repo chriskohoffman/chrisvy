@@ -361,6 +361,9 @@ p.smalltext {
   color: #ebae34;
   text-transform: uppercase;
 }
+div.rsvp {
+  height: 950;
+}
 .cinqueterre-overlay {
   background: url("../../assets/backgrounds/cinqueterre2.jpg") right center no-repeat fixed;
   background-size: cover;
@@ -405,7 +408,8 @@ div.photos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 90px;
 }
 div.photos img {
-  margin: 3px;
+  padding: 3px;
 }
