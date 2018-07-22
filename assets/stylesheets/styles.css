@@ -42,6 +42,9 @@ body#entourage {
 body#invite {
   background: url("../../assets/backgrounds/invite.jpg") right center no-repeat fixed;
 }
+body#contact {
+  background: url("../../assets/engagement/47.jpg") center bottom no-repeat fixed;
+}
 a {
   color: default;
   text-decoration: none;
@@ -49,6 +52,13 @@ a {
 }
 a:hover {
   color: #76571a;
+}
+a.body-links {
+  color: #2d2e30;
+  border-bottom: 1px dotted #ebae34;
+}
+a.body-links:hover {
+  color: #ebae34;
 }
 h1 {
   font-size: 6rem;
@@ -60,6 +70,12 @@ h2 {
   font-size: 3rem;
   font-weight: 100;
   margin-top: -8px;
+  color: #ebae34;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-top: -10px;
   color: #ebae34;
 }
 h4 {
@@ -316,13 +332,6 @@ p.smalltext {
   color: #2d2e30;
   margin: 0 0 30px;
 }
-#details a.body-links {
-  color: #2d2e30;
-  border-bottom: 2px dotted #ebae34;
-}
-#details a.body-links:hover {
-  color: #ebae34;
-}
 #details h2 {
   color: #2d2e30;
   margin-bottom: 30px;
@@ -446,4 +455,43 @@ div.photos img {
 .invite div#invites img {
   height: 1100px;
   pointer-events: none;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+}
+div.contact {
+  width: 80%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+div.contact h2 {
+  margin-bottom: 0;
+}
+div.contact h5 {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+div.contact h4 {
+  color: #d9d5ce;
+  text-align: left;
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+div.contact > div {
+  background-color: rgba(45,46,48,0.2);
+  width: 30%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+div.contact > div a {
+  color: #d9d5ce;
+}
+div.contact #chris {
+  display: flex;
+  justify-content: flex-end;
 }
