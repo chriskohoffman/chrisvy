@@ -39,7 +39,7 @@ html
 
 
 body
-	font-family body
+	font-family body 
 	font-weight 400
 	background-size cover !important
 	font-size 1.4rem
@@ -66,6 +66,9 @@ body
 		
 	&#entourage
 		background url('../../assets/backgrounds/bg.jpg') right center no-repeat fixed
+		
+	&#invite
+		background url('../../assets/backgrounds/invite.jpg') right center no-repeat fixed
 
 	
 a
@@ -123,6 +126,28 @@ h5
 .nomargin
 	margin 0
 	
+a.button,
+a:visited.button,
+a:active.button
+	text-align center
+	display flex
+	height 55px
+	align-items center
+	padding 0 40px 
+	font-family "Crimson"
+	font-size 2.0rem
+	font-weight 400
+	transition 250ms ease-in-out
+	margin-bottom 30px
+	
+	
+	
+	&:first-child
+		margin-right 7px
+	
+	
+	
+
 
 // Video bg
 .videobg
@@ -280,6 +305,7 @@ p.smalltext
 	color nardo
 	height 65%
 	
+	
 	& h1
 		font-family heading
 		color gold
@@ -300,7 +326,7 @@ p.smalltext
 		
 	
 .navbar
-	top 3%
+	top 1%
 	width 100%
 	display flex
 	align-items center
@@ -310,11 +336,11 @@ p.smalltext
 
 	
 	& a
-		font-family body-sans !important
+		font-family body !important
 		font-size 15px
 		text-transform uppercase
-		letter-spacing 0.5rem
-		color gold
+		letter-spacing 0.2rem
+		color charcoal
 		
 .left
 	align-items flex-start
@@ -478,3 +504,21 @@ div.photos
 	
 	& img
 		padding 3px
+		
+.invite
+	display flex
+	align-items center
+	justify-content flex-start
+	
+	.invite-buttons
+		display inline-flex
+		
+	
+	& div#invites
+		
+		& img
+			height 1100px
+			pointer-events none
+		// background url('../../assets/invite/invite.svg') center top no-repeat fixed
+		// background-size contain
+

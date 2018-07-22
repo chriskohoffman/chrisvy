@@ -107,4 +107,12 @@
     width: 80%;
     margin-left: 0;
   }
+  #invites {
+    height: auto;
+    width: 100%;
+  }
+  #invites img {
+    width: 100%;
+    height: auto !important;
+  }
 }

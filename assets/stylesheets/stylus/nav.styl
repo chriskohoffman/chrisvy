@@ -3,203 +3,232 @@ charcoal = #2D2E30
 nardo = #d9d5ce
 grigio = #9a9499
 gold = #ebae34
-  
+	
 
-.navicon 
-  background transparent
-  position relative
-  display flex
-  flex-direction column
-  z-index 99
-  transition linear 0.5s all
-  width 50px
-  height 30px
-  
+// .navicon 
+//   position relative
+//   display flex
+//   flex-direction column
+//   z-index 99
+//   transition linear 0.5s all
+//   width 20px
+//   height 20px
+	
+//   box-sizing content-box
+//   -webkit-box-sizing content-box
+	
+	
+//   padding 20px
+//   background-color gold
+//   border-radius 50%
+	
+//   &:hover
+//     background-color gold
+	
 
-  &:before,
-  &:after 
-    background #fff
-    backface-visibility hidden
-    content ""
-    height 2px
-    left 0
-    transition 0.8s ease
-    width 35px
-  
-  &:before 
-    box-shadow #fff 0 12px 0 0
-    position absolute
-    top 0
-  
-  &:after 
-    position absolute
-    top 24px
-  
-  &--active   
-    margin-top 20px
-    transition linear 0.5s all
-    &:before 
-      box-shadow transparent 0 0 0 0
-      top 15px
-      transform rotate(225deg)
-    
-    &:after   
-      top 15px
-      transform rotate(315deg)
-    
-  
+//   &:before,
+//   &:after 
+//     background #fff
+//     backface-visibility hidden
+//     content ""
+//     height 2px
+//     left 16px
+//     transition 0.8s ease
+//     width 30px
+	
+//   &:before 
+//     box-shadow #fff 0 9px 0 0
+//     position absolute
+//     top 20px
+	
+//   &:after 
+//     position absolute
+//     top 38px
+	
+//   &--active   
+//     margin-top 0px
+//     transition linear 0.5s all
+//     &:before 
+//       box-shadow transparent 0 0 0 0
+//       top 28px
+//       transform rotate(225deg)
+		
+//     &:after   
+//       top 28px
+//       transform rotate(315deg)
+		
+	
 
 
-.toggle 
-  display block
-  margin 20px auto
-  width 30%
-  background-color rgba(0, 0, 0, .85)
-  padding 15px
-  display block
-  opacity 0
-  transition ease-in 0.5s all
-  transform translateY(-200%)
-  min-width 320px
-  position absolute
-  top calc(3% + 60px)
-  
-  &--active 
-    display block
-    opacity 1
-    transition ease-in 0.5s all
-    transform translateY(0)
-    
+// .toggle 
+//   display block
+//   margin 20px auto
+//   width 30%
+//   background-color rgba(0, 0, 0, .85)
+//   padding 15px
+//   display block
+//   opacity 0
+//   transition ease-in 0.5s all
+//   transform translateY(-200%)
+//   min-width 320px
+//   position absolute
+//   top calc(3% + 60px)
+	
+//   &--active 
+//     display block
+//     opacity 1
+//     transition ease-in 0.5s all
+//     transform translateY(0)
+		
 
-    
-  &__menu 
-    padding 0
-    
-    li 
-      width 100%
-      display flex
-      align-items center
-      justify-content center
-      padding 30px 0
-      border-bottom 1px solid rgba(grigio,0.4)
-      
-      &:last-child
-        border none
-        padding-bottom 0
-        
-      &:first-child
-        padding-top 0
-      
-      a 
-        text-decoration none
-        color gold
-        width 100%
-        height 100%
-        display flex
-        align-items center
-        justify-content center
-        
-        
-        &:hover 
-          color gold * 0.9
-        
-      
+		
+//   &__menu 
+//     padding 0
+		
+//     li 
+//       width 100%
+//       display flex
+//       align-items center
+//       justify-content center
+//       border-bottom 1px solid rgba(grigio,0.4)
+			
+//       &:last-child
+//         border none
+//         padding-bottom 0
+				
+//       &:first-child
+//         padding-top 0
+			
+//       a 
+//         text-decoration none
+//         color gold
+//         width 100%
+//         height 100%
+//         display flex
+//         align-items center
+//         justify-content center
+				
+				
+//         &:hover 
+//           color gold * 0.9
+				
+			
 // LIGHT THEME
-  
+	
 .light .navicon 
-  background transparent
-  position relative
-  display flex
-  flex-direction column
-  z-index 99
-  transition linear 0.5s all
-  width 50px
-  height 30px
-  
+	position relative
+	display flex
+	flex-direction column
+	z-index 99
+	transition linear 0.5s all
+	width 20px
+	height 20px
+	
+	padding 20px
+	background-color rgba(gold, 0.5)
+	border-radius 50%
+	
+	box-sizing content-box
+	-webkit-box-sizing content-box
 
-  &:before,
-  &:after 
-    background charcoal
-    backface-visibility hidden
-    content ""
-    height 2px
-    left 0
-    transition 0.8s ease
-    width 35px
-  
-  &:before 
-    box-shadow charcoal 0 12px 0 0
-    position absolute
-    top 0
-  
-  &:after 
-    position absolute
-    top 24px
-  
-  &--active   
-    margin-top 20px
-    transition linear 0.5s all
-    &:before 
-      box-shadow transparent 0 0 0 0
-      top 15px
-      transform rotate(225deg)
-    
-    &:after   
-      top 15px
-      transform rotate(315deg)
-    
-  
+	&:hover
+		background-color gold
+	
+
+	&:before,
+	&:after 
+		background charcoal
+		backface-visibility hidden
+		content ""
+		height 2px
+		left 16px
+		transition 0.8s ease
+		width 30px
+	
+	&:before 
+		box-shadow charcoal 0 9px 0 0
+		position absolute
+		top 20px
+	
+	&:after 
+		position absolute
+		top 38px
+	
+	&--active   
+		margin-top 0px
+		transition linear 0.5s all
+		border-radius 50% 50% 50% 0
+		
+
+		&:before 
+			box-shadow transparent 0 0 0 0
+			top 28px
+			transform rotate(225deg)
+		
+		&:after   
+			top 28px
+			transform rotate(315deg)
+		
+	
 
 
 .light .toggle 
-  display block
-  margin 20px auto
-  width 30%
-  background-color rgba(255, 255, 255, .95)
-  padding 15px
-  display block
-  opacity 0
-  transition ease-in 0.5s all
-  transform translateY(-200%)
-  min-width 320px
-  position absolute
-  top calc(3% + 60px)
-  
-  &--active 
-    display block
-    opacity 1
-    transition ease-in 0.5s all
-    transform translateY(0)
-    
+	display block
+	margin 20px auto
+	width 100%
+	max-width 720px
+	background-color rgba(gold, .925)
+	display block
+	opacity 0
+	transition ease-in 0.5s all
+	transform translateY(-200%)
+	min-width 450px
+	position absolute
+	top calc(3% + 60px)
+	border-radius 0 15px 15px 15px
+	
+	&--active 
+		display block
+		opacity 1
+		transition ease-in 0.5s all
+		transform translateY(0)
+		
 
-    
-  &__menu 
-    padding 0
-    
-    li 
-      width 100%
-      display flex
-      align-items center
-      justify-content center
-      padding 30px 0
-      border-bottom 1px solid rgba(charcoal,0.1)
-      
-      &:last-child
-        border none
-        padding-bottom 0
-        
-      &:first-child
-        padding-top 0
-      
-      a 
-        text-decoration none
-        color gold
-        width 100%
-        height 100%
-        display flex
-        align-items center
-        justify-content center
-        
-        
-        &:hover 
-          color gold * 0.9
+		
+	&__menu 
+		padding 0
+		margin 0
+		
+		li 
+			width 100%
+			display flex
+			align-items center
+			justify-content center
+			background-image: linear-gradient(to right, rgba(white, 0.85) 33%, rgba(255,255,255,0) 0%)
+			background-position: bottom
+			background-size: 4px 1px
+			background-repeat: repeat-x
+			
+			
+			&:last-child
+				border none
+				padding-bottom 0
+				background-image none
+				
+			&:first-child
+				padding-top 0
+			
+			a 
+				text-decoration none
+				color charcoal
+				width 100%
+				height 100%
+				display flex
+				align-items center
+				justify-content center
+				padding 25px 0
+				font-size 2.1rem
+				
+				&:hover 
+					color gold
+					background-color white

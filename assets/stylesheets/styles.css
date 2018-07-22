@@ -39,6 +39,9 @@ body#proposal {
 body#entourage {
   background: url("../../assets/backgrounds/bg.jpg") right center no-repeat fixed;
 }
+body#invite {
+  background: url("../../assets/backgrounds/invite.jpg") right center no-repeat fixed;
+}
 a {
   color: default;
   text-decoration: none;
@@ -90,6 +93,25 @@ h5 {
 }
 .nomargin {
   margin: 0;
+}
+a.button,
+a:visited.button,
+a:active.button {
+  text-align: center;
+  display: flex;
+  height: 55px;
+  align-items: center;
+  padding: 0 40px;
+  font-family: "Crimson";
+  font-size: 2rem;
+  font-weight: 400;
+  transition: 250ms ease-in-out;
+  margin-bottom: 30px;
+}
+a.button:first-child,
+a:visited.button:first-child,
+a:active.button:first-child {
+  margin-right: 7px;
 }
 .videobg {
   position: fixed;
@@ -248,7 +270,7 @@ p.smalltext {
   color: #d9d5ce;
 }
 .navbar {
-  top: 3%;
+  top: 1%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -257,11 +279,11 @@ p.smalltext {
   z-index: 999;
 }
 .navbar a {
-  font-family: "aktiv-grotesk" !important;
+  font-family: "alda" !important;
   font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: #ebae34;
+  letter-spacing: 0.2rem;
+  color: #2d2e30;
 }
 .left {
   align-items: flex-start;
@@ -412,4 +434,16 @@ div.photos {
 }
 div.photos img {
   padding: 3px;
+}
+.invite {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.invite .invite-buttons {
+  display: inline-flex;
+}
+.invite div#invites img {
+  height: 1100px;
+  pointer-events: none;
 }
