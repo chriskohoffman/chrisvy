@@ -395,6 +395,13 @@ p.smalltext {
 div.rsvp {
   height: 950;
 }
+#rsvp .contentarea {
+  justify-content: flex-start;
+  margin-top: 125px;
+}
+#rsvp .contentarea h4 {
+  font-family: "aktiv-grotesk";
+}
 .cinqueterre-overlay {
   background: url("../../assets/backgrounds/cinqueterre2.jpg") right center no-repeat fixed;
   background-size: cover;
